@@ -1,13 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="direction" content="ltr" />
     <title>Catatan Harian</title>
+    <style>
+      /* Force LTR immediately */
+      * {
+        direction: ltr !important;
+        unicode-bidi: embed !important;
+      }
+      html, body {
+        direction: ltr !important;
+        text-align: left !important;
+      }
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
+  <body dir="ltr">
+    <div id="root" dir="ltr"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
